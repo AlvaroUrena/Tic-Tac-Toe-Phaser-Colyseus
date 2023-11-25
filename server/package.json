@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx watch src/index.ts",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.4.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@colyseus/monitor": "^0.15.2",
+    "@colyseus/schema": "^2.0.25",
+    "@colyseus/ws-transport": "^0.15.1",
+    "colyseus": "^0.15.13",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
