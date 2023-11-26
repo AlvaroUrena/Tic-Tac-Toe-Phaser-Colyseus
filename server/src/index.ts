@@ -6,7 +6,7 @@ import { createServer } from 'http'
 import express from 'express'
 
 // Import rooms
-import { MyRoom } from './rooms/MyRoom'
+import { TicTacToe } from './rooms/TicTacToe'
 
 // Creating server
 const port = Number(process.env.port) || 2567
@@ -23,7 +23,7 @@ const gameServer = new Server({
 })
 
 // Register room handlers
-gameServer.define('my_room', MyRoom)
+gameServer.define('tic-tac-toe', TicTacToe)
 
 // Listen
 gameServer.listen(port)

@@ -1,11 +1,12 @@
-import { TestScene } from './scenes/TestScene'
+import Bootstrap from './scenes/Bootstrap'
+import Game from './scenes/Game'
 import Phaser from 'phaser'
 
 const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
-  scene: TestScene,
+  scene: [Bootstrap, Game],
   physics: {
     default: 'arcade',
     arcade: {
