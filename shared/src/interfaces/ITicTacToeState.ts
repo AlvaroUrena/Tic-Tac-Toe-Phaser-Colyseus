@@ -1,5 +1,13 @@
+import { ArraySchema } from '@colyseus/schema'
+
+export enum Cell {
+  Empty,
+  X,
+  O
+}
+
 interface ITicTacToeState {
-  board: number[]
+  board: ArraySchema<Cell>
 
   activePlayer: number
 }

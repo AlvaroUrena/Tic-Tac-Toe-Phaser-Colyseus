@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@colyseus/command':
+    specifier: ^0.2.1
+    version: 0.2.1(colyseus@0.15.13)
   '@colyseus/monitor':
     specifier: ^0.15.2
     version: 0.15.2
@@ -42,6 +45,17 @@ devDependencies:
     version: 5.3.2
 
 packages:
+
+  /@colyseus/command@0.2.1(colyseus@0.15.13):
+    resolution: {integrity: sha512-kwNvJTNDRshuxfcKZyFoO0hpcaUQKTpncl551eLsZr8xgAiu2uyhmuQTcsPYmrDZ1fV8MxcbBlEfu8H+4JtbhA==}
+    peerDependencies:
+      colyseus: '*'
+    dependencies:
+      colyseus: 0.15.13(@colyseus/schema@2.0.25)
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /@colyseus/core@0.15.14:
     resolution: {integrity: sha512-wozlZiVBMjrLPWZr9MCNoFq7xlLe0kjDbJc1lJ27GzrRFf8kxXtIC5Om3CkiP1xk7kpVqXoPLDR39CklI09LeA==}

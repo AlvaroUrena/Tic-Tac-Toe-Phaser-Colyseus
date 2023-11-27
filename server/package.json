@@ -19,6 +19,7 @@
     "typescript": "^5.3.2"
   },
   "dependencies": {
+    "@colyseus/command": "^0.2.1",
     "@colyseus/monitor": "^0.15.2",
     "@colyseus/schema": "^2.0.25",
     "@colyseus/ws-transport": "^0.15.1",

@@ -11,7 +11,7 @@ export class TicTacToeState extends Schema implements ITicTacToeState {
   constructor(){
     super()
 
-    this.board = new ArraySchema(
+    this.board = new ArraySchema<number>(
       0,0,0,
       0,0,0,
       0,0,0
